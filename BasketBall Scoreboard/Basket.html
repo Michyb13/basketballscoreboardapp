@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasketBall Scoreboard</title>
+    <link rel="stylesheet" href="Basket.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div id="main">
+        <div id="inner">
+            <div class="score">
+                <h2>HOME TEAM</h2>
+                <p id="home-scores">0</p>
+                <div class="btn">
+                    <button onclick="homeOnePoint()">+1</button>
+                    <button onclick="homeTwoPoints()">+2</button>
+                    <button onclick="homeThreePoints()">+3</button>
+                </div>
+            </div>
+            <div class="score">
+                <h2>AWAY TEAM</h2>
+                <p id="away-scores">0</p>
+                <div class="btn">
+                    <button onclick="awayOnePoint()">+1</button>
+                    <button onclick="awayTwoPoints()">+2</button>
+                    <button onclick="awayThreePoints()">+3</button>
+                </div>  
+            </div>
+        </div>
+        <div id="footer">
+            <button id="end" onclick="endGame()">END GAME</button>
+            <p id="results">PREVIOUS RESULTS: </p>
+        </div>
+   </div> 
+   <script src="Basket.js"></script>
+</body>
+</html>
